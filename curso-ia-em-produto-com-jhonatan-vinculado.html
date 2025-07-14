@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso - IA em Produto</title>    
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: black; margin: 0; padding: 0; color: #333; }
+    
+    img[src="TOPO.jpg"] {
+  display: block;
+  margin: 50px auto; /* centraliza horizontalmente */
+  width: 750px;       /* tamanho menor da imagem */
+  max-width: 90%;     /* mantém responsividade em telas menores */
+  height: auto;       /* mantém proporção original da imagem */
+}
+
+    header h1 { margin-bottom: 0px; font-size: 2.5em; }
+    .container { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    .container h2 { color: #b3862b; border-bottom: 2px solid #f1e1b0; padding-bottom: 10px; }
+    .container p { font-size: 1.1em; line-height: 1.6; }
+    ul { padding-left: 20px; font-size: 1.1em; }
+    ul li { margin-bottom: 12px; }
+  .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;}
+  .oferta {
+  text-align: center;
+  background: #fff8e1;
+  border: 2px dashed #d4af37;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.oferta .valor-antigo {
+  text-decoration: line-through;
+  color: #a07422;
+  font-size: 1.2em;
+}
+.oferta .valor-antigo span {
+  background: linear-gradient(45deg, #d4af37, #f6e27a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.oferta .valor-atual {
+  font-size: 2em;
+  color: #b3862b;
+  margin: 10px 0;
+}
+.oferta .detalhes-evento {
+  font-size: 1.1em;
+  color: #444;
+}
+    .btn { display: inline-block; margin-top: 30px; padding: 14px 28px; background: linear-gradient(135deg, #e6be68, #b3862b); color: white; text-decoration: none; font-weight: bold; border-radius: 8px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.2s, box-shadow 0.2s; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
+    .idealizador { margin-top: 40px; text-align: center; }
+    .idealizador img { width: 160px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    footer { text-align: center; padding: 20px; background-color: #222; color: white; margin-top: 40px; 
+    
+    }
+    .palestrantes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.palestrante {
+  text-align: center;
+}
+
+.palestrante img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.palestrante .nome {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+.bloco-centralizado {
+  max-width: 700px;
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  .container {
+  text-align: center;
+
+
+}}
+
+{
+  .container {
+  text-align: center;
+}
+.container li {
+  display: block;
+  margin: 10px 0;
+}
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px auto;
+  list-style: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 500px;
+}
+hero {
+  background-image: url(""); /* troque pela imagem real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px; /* ajuste conforme quiser */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45); /* overlay escuro */
+  z-index: 0;
+}
+
+.hero h1,
+.hero p {
+  z-index: 1;
+  position: relative;
+  margin: 0;
+}
+
+.hero {
+  background-image: url("sua-imagem.jpg"); /* troque pelo nome real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 60vh; /* responsivo: 60% da altura da tela */
+  min-height: 320px;
+  max-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* texto na parte de baixo */
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 30px 20px;
+}
+
+/* Overlay escuro para contraste */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="TOPO.jpg" alt="imagem de topo">
+    
+  </header>
+  <div class="container">
+    <h2>Sobre o Curso</h2>
+    <p>Aprenda a usar Inteligência Artificial para criar, testar e escalar ideias com mais velocidade e impacto.</p>
+    <h2>Conteúdo Programático</h2>
+    <ul>
+      <li><strong>1.</strong> Contextualização do Mercado</li>
+      <li><strong>2.</strong> Inteligência de Produto na Era da IA</li>
+      <li><strong>3.</strong> Experimentação Rápida com IA</li>
+      <li><strong>4.</strong> IA no Ciclo Completo do Produto</li>
+      <li><strong>5.</strong> Ferramentas de IA para Inovação</li>
+      <li><strong>6.</strong> Estratégias para Aumentar a Produtividade com IA</li>
+      <li><strong>7.</strong> Mini Projeto: Product Growth Plan com IA</li>
+    </ul>
+    <div class="oferta">
+  <p class="valor-antigo">De <span>R$ 289,90</span></p>
+  <p class="valor-atual">Por <strong>R$ 0,00</strong></p>
+  <p class="detalhes-evento">📅 Dia 30/07 • 💻 100% Online</p>
+</div>
+    <div class="palestrantes">
+  <div class="palestrante">
+    <img src="Imagem TDC.jpg" alt="Jonathan Santos">
+    <p class="nome">Jonathan Santos</p>
+  </div>
+  <div class="palestrante">
+    <img src="WhatsApp Image 2025-07-12 at 23.57.16.jpeg.jpg" alt="Outro Palestrante">
+    <p class="nome">Christien Rachid</p>
+  </div>
+</div>
+    <a href="https://www.even3.com.br/free-class-ia-em-produto-605189/" class="btn">Inscreva-se na Masterclass</a>
+  </div>
+  <footer>&copy; 2025 IA em Produto. Todos os direitos reservados.</footer>
+</body>
+</html>
